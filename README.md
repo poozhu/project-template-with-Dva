@@ -9,7 +9,7 @@
 npm i  //安装依赖
 npm start  //项目启动
 ```
-2.或者拉取本项目分支
+2. 拉取本项目分支
 ```
 git clone https://github.com/ZY2071/project-template-with-Dva.git
 
