@@ -1,26 +1,21 @@
-
-import { get } from '../services/page1';
+import { getExampleData } from '../services/servicePage1';
 
 export default {
 
-  namespace: 'redux',
+  namespace: 'Page1',
 
   state: {
-    data: '我是Redux中的数据',
+    data: '我是Redux中的数据 from modelPage1.js',
     num: 0
   },
 
   subscriptions: {
-    setup({
-      dispatch,
-      history
-    }) { // eslint-disable-line
-    },
+    // 
   },
 
   effects: {
     *getdata({ payload }, { call, put }) {
-      const res = yield call(get);
+      const res = yield call(getExampleData);
       if (res) {
         console.log('请求已完成')
         yield put({
@@ -42,3 +37,6 @@ export default {
   },
 
 };
+
+
+// redux操作用例

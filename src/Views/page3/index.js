@@ -11,3 +11,6 @@ class Index extends React.Component {
 }
 
 export default Index;
+
+
+// 单纯页面用例

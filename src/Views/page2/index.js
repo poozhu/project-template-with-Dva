@@ -1,16 +1,18 @@
 import React from 'react';
-import Component from '../../components/component'
+import MyComponent from '../../components/component1'
 
 class Index extends React.Component {
   render() {
     return (
       <div>
         <h1>Page2</h1>
-        <Component></Component>
-
+        <MyComponent />    
       </div>
     );
   }
 }
 
 export default Index;
+
+
+// 组件使用用例

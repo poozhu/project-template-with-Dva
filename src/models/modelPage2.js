@@ -1,26 +1,22 @@
 
-import { get } from '../services/page1';
+import { getExampleData } from '../services/servicePage1';
 
 export default {
 
-  namespace: 'redux2',
+  namespace: 'Page2',
 
   state: {
-    data: '我是Redux中的数据',
+    data: '我是Redux中的数据 from modelPage2.js',
     num: 0
   },
 
   subscriptions: {
-    setup({
-      dispatch,
-      history
-    }) { // eslint-disable-line
-    },
+    //  
   },
 
   effects: {
     *getdata({ payload }, { call, put }) {
-      const res = yield call(get);
+      const res = yield call(getExampleData);
       if (res) {
         console.log('请求已完成')
         yield put({

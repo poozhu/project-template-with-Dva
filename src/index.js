@@ -1,6 +1,6 @@
 import dva from 'dva';
 import './index.css';
-import models from './models/modelConfig'
+import models from './models/modelConfig'   // 引入model并全部注册
 
 
 // 1. Initialize
