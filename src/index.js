@@ -1,17 +1,18 @@
 import dva from 'dva';
 import './index.css';
 import models from './models/modelConfig'   // 引入model并全部注册
-
+// import createHistory from 'history/createBrowserHistory';
 
 // 1. Initialize
-const app = dva();
+const app = dva({
+    // history: createHistory(),
+});
 
 // 2. Plugins
 // app.use({});
 
 // 3. Model
-// app.model(require('./models/page1').default);
-models.forEach(m=>app.model(m))
+models.forEach(m => app.model(m))
 
 // 4. Router
 app.router(require('./router').default);
